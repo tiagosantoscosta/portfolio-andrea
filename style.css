@@ -107,7 +107,7 @@ a:link{text-decoration:none}
 }
 #cabeçalho > #titleHeader {
     font-weight: 300; 
-    font-size: 16px;
+    font-size: 20px;
     margin-top: 20px;
 }
 .indicator{
@@ -181,13 +181,34 @@ a:link{text-decoration:none}
 }
 
 #cabeçalho{
-    background-image: url(imagens/background.jpg);
+    background-image: url(imagens/background2.jpg);
+   
+}
+
+#cabeçalho {
+    position: relative;
+    height: 660px;
+    z-index: 0;
     background-size: cover;   
-    padding-top: 110px;
+    padding-top: 30px;
     color: white;
     text-align: center;
-    height: 350px;
 }
+
+#cabeçalho::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(imagens/background.jpg);
+    background-size: cover; 
+    background-position: center center;   
+    opacity: 0.4;
+    z-index: -1;
+}
+
 
  #fotoperfil{
     border-radius: 62% 38% 55% 45% / 78% 69% 31% 22%  ;
