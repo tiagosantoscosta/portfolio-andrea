@@ -5,7 +5,7 @@ a:link{text-decoration:none}
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family:'Montserrat', sans-serif;;
+    font-family:'Montserrat', sans-serif;
 }
 
 #navcontainer{
@@ -165,11 +165,11 @@ a:link{text-decoration:none}
     transform: translateX(calc(70px * 4));
 }
 
-#cabeçalho > #elementEl::after{
+/* #cabeçalho > #elementEl::after{
     content: '|';
     margin-left: 5px;
     animation: blink 0.7s infinite;   
-}
+} */
 
 @keyframes blink{
     0% { opacity: 1;}
@@ -184,12 +184,12 @@ a:link{text-decoration:none}
     text-align: center;
 }
 
-#cabeçalho #fotoperfil{
+ #fotoperfil{
     border-radius: 62% 38% 55% 45% / 78% 69% 31% 22%  ;
     width: 200px;
     margin: auto;
     display: block;
-    box-shadow: 3px 3px 11px  rgba(0, 0, 0, 0.433);   
+    
 }
 
 #fotoperfil::before{
@@ -251,11 +251,11 @@ a:link{text-decoration:none}
 }
 
 #sobremim{
-    background-color: rgb(232, 232, 232);
+    background-color: rgb(255, 248, 232);
     text-align: left;
     padding: 20px 15px 15px 15px;
     font-weight: 400;
-    color: rgb(8, 0, 61);
+    color: rgb(45, 40, 35);
     font-size: 17px;   
 }
 
@@ -384,7 +384,7 @@ a:link{text-decoration:none}
 
 #tituloProjetos{
     text-align: center;
-    color: rgb(8, 0, 61);
+    color: rgb(0, 0, 0);
     padding: 20px 20px 0px 20px;
     font-size: 30px;
 }
@@ -411,10 +411,10 @@ a:link{text-decoration:none}
     padding: 0px 20px;   
 }
 
-.imag{
+/* .imag{
     height: 200px;
     margin-bottom: 15px;    
-}
+} */
 
 .card{
     display: inline;
@@ -453,7 +453,7 @@ a:link{text-decoration:none}
     border-radius: 10px;
     margin: 5px;
     color: white;
-    background-color: #4d8587;
+    background-color: #874d4d;
     font-weight: 500;  
 }
 
@@ -658,12 +658,32 @@ footer #title{
 }
 
 @media screen and (min-width: 1000px) {
+    .navbar .nav-link {
+        color: white !important;
+        padding-left: 2rem !important;
+    }
+    
     #cabeçalho {
-        height: 640px;
-        background-image: url(imagens/backgound.png);
+        position: relative;
+        height: 660px;
+        z-index: 0;
+    }
+    
+    #cabeçalho::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url(imagens/background.jpg);
         background-size: cover; 
         background-position: center center;   
+        opacity: 0.4;
+        z-index: -1;
     }
+    
+    
 
     #cabeçalho .fa-brands:hover {
         color: rgb(54,253,143);
@@ -672,15 +692,15 @@ footer #title{
         
     }
     
-    #cabeçalho > #fotoperfil {
-        float: right;
-        margin-right: 100px;
-        margin-top: 50px;
-        width: 400px;    
+     #fotoperfil {
+      
+        margin-right: -150px;
+        margin-top: 0px;
+        width: 270px;    
     }
 
     #cabeçalho > h1 {
-        margin-top: 110px;
+        margin-top: 210px;
         font-size: 5em;     
     }
 
@@ -691,7 +711,7 @@ footer #title{
     }
 
     #cabeçalho > #p1 {
-        color: rgb(54,253,143);
+        color: rgb(255, 255, 255);
         font-size: 2em;
     }
 
@@ -838,14 +858,19 @@ footer #title{
 
     #sobremim{
         padding: 70px 300px 70px 130px;
-        font-size: 22px;
+        font-size: 19px;
     }
+    #sobremim img {
+        float: right;
+        margin-left: 50px;
+    }
+    
 
-    #cabeçalho > #elementEl::after{
+    /* #cabeçalho > #elementEl::after{
         content: '|';
         
         animation: blink 0.7s infinite;   
-    }
+    } */
     
     @keyframes blink{
         0% { opacity: 1;}
@@ -872,16 +897,21 @@ footer #title{
 
     #tituloProjetos {
         text-align: center;
-        color: rgb(8, 0, 61);
+        color: rgb(0, 0, 0);
         padding-top: 50px;
-        padding-bottom: 40px;
-        font-size: 65px;  
+        padding-bottom: 0px;
+        font-size: 40px;  
     }
 
-    .card {
+    /* .card {
         margin: 20px 50px 60px 50px;
+    } */
+   
+    .card {
+        flex-basis: calc(25% - 40px);
+        margin: 20px;
     }
-
+    
     #container-skills{
         height: 1300px;
         
@@ -1011,6 +1041,25 @@ footer #title{
         
     }
 
+    #containerIMG{
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 50px 8%;
+    }
+    .gallery{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-gap: 30px;
+    }
+    .gallery img{
+        width: 100%;
+        border-radius:7px;
+        border:3px solid rgb(255, 255, 255);
+    }
+
     footer{
         height: 250px;
         color: rgb(151, 151, 151);
@@ -1022,7 +1071,7 @@ footer #title{
     }
 
     #footeremail{
-          font-size: 30px;
+          font-size: 20px;
           margin-top: 0px;     
     }
 
