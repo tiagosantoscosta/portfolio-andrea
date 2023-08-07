@@ -105,7 +105,11 @@ a:link{text-decoration:none}
     transition-delay: .5s;
     transform: translateY(-31px) scale(1);
 }
-
+#cabeçalho > #titleHeader {
+    font-weight: 300; 
+    font-size: 16px;
+    margin-top: 20px;
+}
 .indicator{
     position: absolute;
     top: -43%;
@@ -177,19 +181,20 @@ a:link{text-decoration:none}
 }
 
 #cabeçalho{
-    background-image: url(imagens/background2.jpg);
+    background-image: url(imagens/background.jpg);
     background-size: cover;   
-    padding-top: 30px;
+    padding-top: 110px;
     color: white;
     text-align: center;
+    height: 350px;
 }
 
  #fotoperfil{
     border-radius: 62% 38% 55% 45% / 78% 69% 31% 22%  ;
-    width: 200px;
+    width: 100px;
     margin: auto;
     display: block;
-    
+    margin-top: -15px;
 }
 
 #fotoperfil::before{
@@ -212,10 +217,9 @@ a:link{text-decoration:none}
     padding: 0px 20px;  
 }
 
-#cabeçalho > #p1{
-    color: rgb(54,253,143);
-    font-weight: 300;
-    font-size: 1.2em;  
+#cabeçalho > #p1 {
+    font-size: 16px;
+     color: rgb(255, 210, 179);
 }
 
 #cabeçalho > #p2{
@@ -248,11 +252,12 @@ a:link{text-decoration:none}
 
 #sobremim h2{
     margin-bottom: 20px;  
+    text-align: center;
 }
 
 #sobremim{
-    background-color: rgb(255, 248, 232);
-    text-align: left;
+    background-color: rgb(252, 248, 240);
+    text-align: center;
     padding: 20px 15px 15px 15px;
     font-weight: 400;
     color: rgb(45, 40, 35);
@@ -386,7 +391,7 @@ a:link{text-decoration:none}
     text-align: center;
     color: rgb(0, 0, 0);
     padding: 20px 20px 0px 20px;
-    font-size: 30px;
+    font-size: 25px;
 }
 
 #container-projetos{
@@ -573,8 +578,8 @@ footer #title{
 }
 
 #footeremail{
-    margin-top: -25px;
-    font-size: 22px;
+    margin-top: 25px;
+    font-size: 20px;
 }
 
 #sucesso{
@@ -657,18 +662,19 @@ footer #title{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 50px 8%;
+    padding: 20px 8%;
 }
 .gallery{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    grid-gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    grid-gap: 20px;
 }
 .gallery img{
     width: 100%;
-    border-radius:7px;
-    border:3px solid rgb(255, 255, 255);
+    border-radius:3px;
+    border:2px ridge rgb(178, 178, 178);
 }
+
  
 @media screen and (min-width: 600px) {
     #girartela, #aviso {
@@ -681,6 +687,8 @@ footer #title{
         color: white !important;
         padding-left: 2rem !important;
     }
+
+    
     
     #cabeçalho {
         position: relative;
@@ -723,15 +731,15 @@ footer #title{
         font-size: 5em;     
     }
 
-    #cabeçalho > p {
-        margin-top: 10px;
-        font-weight: 300;
-        font-size: 2em;   
+    #cabeçalho > #titleHeader {
+        font-weight: 300; 
+        font-size: 35px;
+        margin-top: 50px;
     }
 
     #cabeçalho > #p1 {
-        color: rgb(255, 255, 255);
-        font-size: 2em;
+        font-size: 22px;
+         color: rgb(255, 210, 179);
     }
 
     #cabeçalho > #p2 {
@@ -878,6 +886,7 @@ footer #title{
     #sobremim{
         padding: 70px 300px 70px 130px;
         font-size: 19px;
+        text-align: left;
     }
     #sobremim img {
         float: right;
@@ -953,7 +962,10 @@ footer #title{
     #container-skills h3{
         font-size: 45px;
     }
-
+    #sobremim h2{
+        margin-bottom: 20px;  
+        text-align: left;
+    }
     .skills{
         width: 500px;
         border-top: 1px solid rgb(118, 118, 118);
@@ -1091,7 +1103,7 @@ footer #title{
     }
 
     #footeremail{
-          font-size: 20px;
+          font-size: 22px;
           margin-top: 0px;     
     }
 
