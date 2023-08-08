@@ -75,25 +75,32 @@
         </div>
       </div> -->
 
-    <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top bg-transparent" style="background-color: rgba(60, 60, 60, 0.396) !important;height: 80px;">
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active mr-3">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item mr-3">
-                    <a class="nav-link" href="#sobremim"><span class="text" id="textsobremim">Sobre mim</span></a>
-                </li>
-                <li class="nav-item mr-3">
-                    <a class="nav-link" href="#projetos"><span class="text">Projetos</span></a>
-                </li>
-                <li class="nav-item mr-3">
-                    <a class="nav-link" href="#formulario"> <span class="text">Contato</span></a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+      <header>
+        <nav class="navbar navbar-expand-sm navbar-light bg-light fixed-top bg-transparent" style="background-color: rgba(60, 60, 60, 0.396) !important;">
+            <!-- Adicione um botão de alternância de navegação -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Adicione um contêiner de colapso para agrupar e ocultar o conteúdo da barra de navegação -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active mr-3">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item mr-3">
+                        <a class="nav-link" href="#sobremim"><span class="text" id="textsobremim">Sobre mim</span></a>
+                    </li>
+                    <li class="nav-item mr-3">
+                        <a class="nav-link" href="#projetos"><span class="text">Projetos</span></a>
+                    </li>
+                    <li class="nav-item mr-3">
+                        <a class="nav-link" href="#formulario"> <span class="text">Contato</span></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    
+    
     
     
 
@@ -117,7 +124,7 @@
     <section id="sobremim" data-anime="up"> 
       <h2 ><b  style="font-family: 'Dancing Script', cursive; " >Sobre mim</b></h2>
       <img  src="imagens/perfilandrea.png" alt="foto perfil" id="fotoperfil">
-      <p  >Graduada em Designer de interiores desde 2011 com MBA em gestão de projetos. Trabalhei em algumas das maiores lojas de móveis planejados de Brasília - DF, realizando também alguns projetos de forma autônoma; possuo maior experiência e conhecimento na elaboração de projetos de móveis sob medida e para pequenos espaços.<br> <br> Meus projetos são desenvolvidos a partir de uma análise detalhada do perfil cada cliente, de forma que atendam as suas necessidades e sonhos dentro da melhor utilização do espaço disponível. <br> <br> Tenho conhecimento nas ferramentas SketchUp e AutoCAD, porém atuo majoritariamente com Promob Arch na criação de meus projetos. Todos os projetos acompanham memorial descritivo, imagens em 3D, mood board e medidas com detalhamento para a execução dos móveis planejadoss.
+      <p  >Graduada em Designer de interiores desde 2011 com MBA em gestão de projetos. Trabalhei em algumas das maiores lojas de móveis planejados de Brasília - DF, realizando também alguns projetos de forma autônoma; possuo maior experiência e conhecimento na elaboração de projetos de móveis sob medida e para pequenos espaços.<br> <br> Meus projetos são desenvolvidos a partir de uma análise detalhada do perfil cada cliente, de forma que atendam as suas necessidades e sonhos dentro da melhor utilização do espaço disponível. <br> <br> Tenho conhecimento nas ferramentas SketchUp e AutoCAD, porém atuo majoritariamente com Promob Arch na criação de meus projetos. Todos os projetos acompanham memorial descritivo, imagens em 3D, mood board e medidas com detalhamento para a execução dos móveis planejados.
       </p>     
     </section>
     
@@ -209,14 +216,19 @@
       </div>
     </section>
     
-   
+    <div>
+      <a href="https://wa.me/351936406480" class="to-top" target="_blank">
+          <img id="whats" src="imagens/whats.png" alt="">
+      </a>
+  </div>
+  
     
       <!-- formulario  -->
     <section id="formulario">     
-      <h2>//Entre em contato</h2>
+      <h2 style="color: black;">//Entre em contato</h2>
       <div>
-        <form action="https://formsubmit.co/tiagocostta@outlook.com" method="post" autocomplete="on">
-          <input type="hidden" name="_next" value="https://portfolio-andreia-two.vercel.app/sucesso.html">
+        <form action="https://formsubmit.co/itacarambidesigner@gmail.com" method="post" autocomplete="on">
+          <input type="hidden" name="_next" value="https://portfolio-andrea-three.vercel.app//sucesso.html">
           <input type="hidden" name="_captcha" value="false">
           <label for="name">Nome</label>
           <input type="text" name="name" id="nome" placeholder="Seu nome" required>
@@ -233,7 +245,6 @@
       <footer>
         <div id="contato">
           <p id="footeremail"><i class="fa-solid fa-envelope"></i>  itacarambidesigner@gmail.com</p>  
-          <p id="footeremail" style="margin-top: -10px;"><i class="fa-solid fa-phone"></i>  (xx) xxxxx-xxxx</p>  
         </div>
       </footer>
 
