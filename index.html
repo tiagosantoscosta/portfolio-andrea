@@ -88,14 +88,25 @@
                         <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item mr-3">
-                        <a class="nav-link" href="#sobremim"><span class="text" id="textsobremim">Sobre mim</span></a>
+                        <a class="nav-link" href="#sobremim" id="menuSobreMim"><span class="text" id="textsobremim">Sobre mim</span></a>
                     </li>
                     <li class="nav-item mr-3">
-                        <a class="nav-link" href="#projetos"><span class="text">Projetos</span></a>
+                        <a class="nav-link" href="#projetos" id="menuProjetos"><span class="text">Projetos</span></a>
                     </li>
                     <li class="nav-item mr-3">
-                        <a class="nav-link" href="#formulario"> <span class="text">Contato</span></a>
+                        <a class="nav-link" href="#formulario" id="menuFormulario"> <span class="text">Contato</span></a>
                     </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          <img src="icons/Brazil.jpg" alt="" height="20px;"> Português-Br
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li ><a class="dropdown-item" href="#" id="navbarDropdown2">
+                              <img src="icons/ReinoUnido.jpg" alt="" height="20px;"> English
+                          </a></li>
+                      </ul>
+                  </li>
+                  
                 </ul>
             </div>
         </nav>
@@ -107,6 +118,7 @@
 
       <!-- cabeçalho -->
      <div id="cabeçalho">
+     
         <!-- <img  src="imagens/perfilandrea.png" alt="foto perfil" id="fotoperfil"> -->
        <h1 id="elementEl" style="font-family: 'Dancing Script', cursive; ">Andrea Itacarambi</h1> 
         <p id="p1" >Designer de interiores</p> 
@@ -121,10 +133,10 @@
    
 
     <!-- Sobre mim -->
-    <section id="sobremim" data-anime="up"> 
-      <h2 ><b >Sobre mim</b></h2>
+    <section id="sobremim" data-anime="up">  
+      <h2 ><b id="sobremimTitle" >Sobre mim</b></h2>
       <img  src="imagens/perfilandrea.png" alt="foto perfil" id="fotoperfil">
-      <p  >Graduada em Designer de interiores desde 2011 com MBA em gestão de projetos. Trabalhei em algumas das maiores lojas de móveis planejados de Brasília - DF, realizando também alguns projetos de forma autônoma e consultorias online; possuo maior experiência e conhecimento na elaboração de projetos de móveis sob medida e para pequenos espaços.<br> <br> Meus projetos são desenvolvidos a partir de uma análise detalhada do perfil cada cliente, de forma que atendam as suas necessidades e sonhos dentro da melhor utilização do espaço disponível. <br> <br> Tenho conhecimento nas ferramentas SketchUp e AutoCAD, porém atuo majoritariamente com Promob Arch na criação de meus projetos. Todos os projetos acompanham memorial descritivo, imagens em 3D, mood board e medidas com detalhamento para a execução dos móveis planejados.
+      <p id="sobreMimText" >Graduada em Designer de interiores desde 2011 com MBA em gestão de projetos. Trabalhei em algumas das maiores lojas de móveis planejados de Brasília - DF, realizando também alguns projetos de forma autônoma e consultorias online; possuo maior experiência e conhecimento na elaboração de projetos de móveis sob medida e para pequenos espaços.<br> <br> Meus projetos são desenvolvidos a partir de uma análise detalhada do perfil cada cliente, de forma que atendam as suas necessidades e sonhos dentro da melhor utilização do espaço disponível. <br> <br> Tenho conhecimento nas ferramentas SketchUp e AutoCAD, porém atuo majoritariamente com Promob Arch na criação de meus projetos. Todos os projetos acompanham memorial descritivo, imagens em 3D, mood board e medidas com detalhamento para a execução dos móveis planejados.
       </p>     
     </section>
     
@@ -169,83 +181,83 @@
       <h2 id="tituloProjetos"><b>Conheça alguns dos meus projetos</b></h2>
       <div id="containerIMG">
         <div class="gallery">
-          <a href="images/projeto-4.jpg" data-lightbox="models" data-title="Cliente desejava modernizar a cozinha, aumentar a bancada de trabalho e ter um espaço para café. O projeto apresenta soluções para as necessidades apresentadas de forma harmônica e funcional, criando também uma mini horta para compor a proposta final.">
+          <a href="images/projeto-4.jpg" data-lightbox="models" class="legenda1" data-title="Cliente desejava modernizar a cozinha, aumentar a bancada de trabalho e ter um espaço para café. O projeto apresenta soluções para as necessidades apresentadas de forma harmônica e funcional, criando também uma mini horta para compor a proposta final.">
             <img  src="images/projeto-4.jpg" >
           </a>
-          <a href="images/projeto-12.jpg" data-lightbox="models" data-title="Cliente desejava modernizar a cozinha, aumentar a bancada de trabalho e ter um espaço para café. O projeto apresenta soluções para as necessidades apresentadas de forma harmônica e funcional, criando também uma mini horta para compor a proposta final.">
+          <a href="images/projeto-12.jpg" data-lightbox="models" class="legenda1" data-title="Cliente desejava modernizar a cozinha, aumentar a bancada de trabalho e ter um espaço para café. O projeto apresenta soluções para as necessidades apresentadas de forma harmônica e funcional, criando também uma mini horta para compor a proposta final.">
             <img  src="images/projeto-12.jpg" >
           </a>
-          <a href="images/projeto-1.jpg" data-lightbox="models" data-title="Cliente necessitava de melhor aproveitamento da varanda e sala de jantar do apartamento. Projeto executado por meio de consultoria on-line, na varanda foi proposto um espaço para a família em momentos de lazer e na sala de jantar, para melhor aproveitamento, a proposta foi uma mesa com canto alemão e painel em espelho para ampliar visualmente o ambiente.">
+          <a href="images/projeto-1.jpg" data-lightbox="models" class="leganda2" data-title="Cliente necessitava de melhor aproveitamento da varanda e sala de jantar do apartamento. Projeto executado por meio de consultoria on-line, na varanda foi proposto um espaço para a família em momentos de lazer e na sala de jantar, para melhor aproveitamento, a proposta foi uma mesa com canto alemão e painel em espelho para ampliar visualmente o ambiente.">
             <img  src="images/projeto-1.jpg" >
           </a>
-          <a href="images/projeto-3.jpg" data-lightbox="models" data-title="Cliente necessitava de melhor aproveitamento da varanda e sala de jantar do apartamento. Projeto executado por meio de consultoria on-line, na varanda foi proposto um espaço para a família em momentos de lazer e na sala de jantar, para melhor aproveitamento, a proposta foi uma mesa com canto alemão e painel em espelho para ampliar visualmente o ambiente.">
+          <a href="images/projeto-3.jpg" data-lightbox="models" class="leganda2" data-title="Cliente necessitava de melhor aproveitamento da varanda e sala de jantar do apartamento. Projeto executado por meio de consultoria on-line, na varanda foi proposto um espaço para a família em momentos de lazer e na sala de jantar, para melhor aproveitamento, a proposta foi uma mesa com canto alemão e painel em espelho para ampliar visualmente o ambiente.">
             <img  src="images/projeto-3.jpg" >
           </a>
-          <a href="images/projeto-5.jpg" data-lightbox="models" data-title="Cliente necessitava de melhor aproveitamento da varanda e sala de jantar do apartamento. Projeto executado por meio de consultoria on-line, na varanda foi proposto um espaço para a família em momentos de lazer e na sala de jantar, para melhor aproveitamento, a proposta foi uma mesa com canto alemão e painel em espelho para ampliar visualmente o ambiente.">
+          <a href="images/projeto-5.jpg" data-lightbox="models" class="leganda2" data-title="Cliente necessitava de melhor aproveitamento da varanda e sala de jantar do apartamento. Projeto executado por meio de consultoria on-line, na varanda foi proposto um espaço para a família em momentos de lazer e na sala de jantar, para melhor aproveitamento, a proposta foi uma mesa com canto alemão e painel em espelho para ampliar visualmente o ambiente.">
             <img  src="images/projeto-5.jpg" >
           </a>
-          <a href="images/projeto-8.jpg" data-lightbox="models" data-title="Cliente necessitava de melhor aproveitamento da varanda e sala de jantar do apartamento. Projeto executado por meio de consultoria on-line, na varanda foi proposto um espaço para a família em momentos de lazer e na sala de jantar, para melhor aproveitamento, a proposta foi uma mesa com canto alemão e painel em espelho para ampliar visualmente o ambiente.">
+          <a href="images/projeto-8.jpg" data-lightbox="models" class="leganda2" data-title="Cliente necessitava de melhor aproveitamento da varanda e sala de jantar do apartamento. Projeto executado por meio de consultoria on-line, na varanda foi proposto um espaço para a família em momentos de lazer e na sala de jantar, para melhor aproveitamento, a proposta foi uma mesa com canto alemão e painel em espelho para ampliar visualmente o ambiente.">
             <img  src="images/projeto-8.jpg" >
           </a>
-          <a href="images/projeto-13.jpg" data-lightbox="models" data-title="O primeiro contato dessa cliente foi em busca de remodelar o escritório de trabalho do esposo, de forma a surpreendê-lo. Posteriormente solicitou também o projeto da sala de estar predominantemente em estilo boho com elementos religiosos e muita natureza. Também realizamos o projeto do quarto da filha do casal em estilo montessoriano.">
+          <a href="images/projeto-13.jpg" data-lightbox="models" class="legenda3" data-title="O primeiro contato dessa cliente foi em busca de remodelar o escritório de trabalho do esposo, de forma a surpreendê-lo. Posteriormente solicitou também o projeto da sala de estar predominantemente em estilo boho com elementos religiosos e muita natureza. Também realizamos o projeto do quarto da filha do casal em estilo montessoriano.">
             <img  src="images/projeto-13.jpg" >
           </a>
-          <a href="images/projeto-28.jpg" data-lightbox="models" data-title="O primeiro contato dessa cliente foi em busca de remodelar o escritório de trabalho do esposo, de forma a surpreendê-lo. Posteriormente solicitou também o projeto da sala de estar predominantemente em estilo boho com elementos religiosos e muita natureza. Também realizamos o projeto do quarto da filha do casal em estilo montessoriano.">
+          <a href="images/projeto-28.jpg" data-lightbox="models" class="legenda3" data-title="O primeiro contato dessa cliente foi em busca de remodelar o escritório de trabalho do esposo, de forma a surpreendê-lo. Posteriormente solicitou também o projeto da sala de estar predominantemente em estilo boho com elementos religiosos e muita natureza. Também realizamos o projeto do quarto da filha do casal em estilo montessoriano.">
             <img  src="images/projeto-28.jpg" >
           </a>
-          <a href="images/projeto-26.jpg" data-lightbox="models" data-title="O primeiro contato dessa cliente foi em busca de remodelar o escritório de trabalho do esposo, de forma a surpreendê-lo. Posteriormente solicitou também o projeto da sala de estar predominantemente em estilo boho com elementos religiosos e muita natureza. Também realizamos o projeto do quarto da filha do casal em estilo montessoriano.">
+          <a href="images/projeto-26.jpg" data-lightbox="models" class="legenda3" data-title="O primeiro contato dessa cliente foi em busca de remodelar o escritório de trabalho do esposo, de forma a surpreendê-lo. Posteriormente solicitou também o projeto da sala de estar predominantemente em estilo boho com elementos religiosos e muita natureza. Também realizamos o projeto do quarto da filha do casal em estilo montessoriano.">
             <img  src="images/projeto-26.jpg" >
           </a>
-          <a href="images/projeto-16.jpg" data-lightbox="models" data-title="O primeiro contato dessa cliente foi em busca de remodelar o escritório de trabalho do esposo, de forma a surpreendê-lo. Posteriormente solicitou também o projeto da sala de estar predominantemente em estilo boho com elementos religiosos e muita natureza. Também realizamos o projeto do quarto da filha do casal em estilo montessoriano.">
+          <a href="images/projeto-16.jpg" data-lightbox="models" class="legenda3" data-title="O primeiro contato dessa cliente foi em busca de remodelar o escritório de trabalho do esposo, de forma a surpreendê-lo. Posteriormente solicitou também o projeto da sala de estar predominantemente em estilo boho com elementos religiosos e muita natureza. Também realizamos o projeto do quarto da filha do casal em estilo montessoriano.">
             <img  src="images/projeto-16.jpg" >
           </a>
-          <a href="images/projeto-19.jpg" data-lightbox="models" data-title="O primeiro contato dessa cliente foi em busca de remodelar o escritório de trabalho do esposo, de forma a surpreendê-lo. Posteriormente solicitou também o projeto da sala de estar predominantemente em estilo boho com elementos religiosos e muita natureza. Também realizamos o projeto do quarto da filha do casal em estilo montessoriano.">
+          <a href="images/projeto-19.jpg" data-lightbox="models" class="legenda3" data-title="O primeiro contato dessa cliente foi em busca de remodelar o escritório de trabalho do esposo, de forma a surpreendê-lo. Posteriormente solicitou também o projeto da sala de estar predominantemente em estilo boho com elementos religiosos e muita natureza. Também realizamos o projeto do quarto da filha do casal em estilo montessoriano.">
             <img  src="images/projeto-19.jpg" >
           </a>
-          <a href="images/projeto-15.jpg" data-lightbox="models" data-title="Projeto criado para atender a necessida de uma pessoa adulta e solteira no qual o desejo era aproveitar o espaço disponível com os móveis que já possuia de forma a criar harmonia a um pequeno espaço para home office.">
+          <a href="images/projeto-15.jpg" data-lightbox="models" class="legenda4" data-title="Projeto criado para atender a necessida de uma pessoa adulta e solteira no qual o desejo era aproveitar o espaço disponível com os móveis que já possuia de forma a criar harmonia a um pequeno espaço para home office.">
             <img  src="images/projeto-15.jpg" >
           </a>
-          <a href="images/projeto-17.jpg" data-lightbox="models" data-title="Projeto criado para atender a necessida de uma pessoa adulta e solteira no qual o desejo era aproveitar o espaço disponível com os móveis que já possuia de forma a criar harmonia a um pequeno espaço para home office.">
+          <a href="images/projeto-17.jpg" data-lightbox="models"  class="legenda4" data-title="Projeto criado para atender a necessida de uma pessoa adulta e solteira no qual o desejo era aproveitar o espaço disponível com os móveis que já possuia de forma a criar harmonia a um pequeno espaço para home office.">
             <img  src="images/projeto-17.jpg" >
           </a>
-          <a href="images/projeto-14.jpg" data-lightbox="models" data-title="Projeto realizado totalmente de forma on-line, onde a necessidade da cliente era remodelar por completo um apartamento antigo. todos os acabamentos, móveis e artigos decorativos foram sugeridos de forma a trazer harmonia, conforto e melhor aproveitamento dos espaços dentro da mescla dos estilos escandinavo e moderno.">
+          <a href="images/projeto-14.jpg" data-lightbox="models" class="legenda5" data-title="Projeto realizado totalmente de forma on-line, onde a necessidade da cliente era remodelar por completo um apartamento antigo. todos os acabamentos, móveis e artigos decorativos foram sugeridos de forma a trazer harmonia, conforto e melhor aproveitamento dos espaços dentro da mescla dos estilos escandinavo e moderno.">
             <img  src="images/projeto-14.jpg" >
           </a>
-          <a href="images/projeto-20.jpg" data-lightbox="models" data-title="Projeto realizado totalmente de forma on-line, onde a necessidade da cliente era remodelar por completo um apartamento antigo. todos os acabamentos, móveis e artigos decorativos foram sugeridos de forma a trazer harmonia, conforto e melhor aproveitamento dos espaços dentro da mescla dos estilos escandinavo e moderno.">
+          <a href="images/projeto-20.jpg" data-lightbox="models" class="legenda5" data-title="Projeto realizado totalmente de forma on-line, onde a necessidade da cliente era remodelar por completo um apartamento antigo. todos os acabamentos, móveis e artigos decorativos foram sugeridos de forma a trazer harmonia, conforto e melhor aproveitamento dos espaços dentro da mescla dos estilos escandinavo e moderno.">
             <img  src="images/projeto-20.jpg" >
           </a>
-          <a href="images/projeto-22.jpg" data-lightbox="models" data-title="Projeto realizado totalmente de forma on-line, onde a necessidade da cliente era remodelar por completo um apartamento antigo. todos os acabamentos, móveis e artigos decorativos foram sugeridos de forma a trazer harmonia, conforto e melhor aproveitamento dos espaços dentro da mescla dos estilos escandinavo e moderno.">
+          <a href="images/projeto-22.jpg" data-lightbox="models" class="legenda5" data-title="Projeto realizado totalmente de forma on-line, onde a necessidade da cliente era remodelar por completo um apartamento antigo. todos os acabamentos, móveis e artigos decorativos foram sugeridos de forma a trazer harmonia, conforto e melhor aproveitamento dos espaços dentro da mescla dos estilos escandinavo e moderno.">
             <img  src="images/projeto-22.jpg" >
           </a>
-          <a href="images/projeto-29.jpg" data-lightbox="models" data-title="Projeto realizado totalmente de forma on-line, onde a necessidade da cliente era remodelar por completo um apartamento antigo. todos os acabamentos, móveis e artigos decorativos foram sugeridos de forma a trazer harmonia, conforto e melhor aproveitamento dos espaços dentro da mescla dos estilos escandinavo e moderno.">
+          <a href="images/projeto-29.jpg" data-lightbox="models" class="legenda5" data-title="Projeto realizado totalmente de forma on-line, onde a necessidade da cliente era remodelar por completo um apartamento antigo. todos os acabamentos, móveis e artigos decorativos foram sugeridos de forma a trazer harmonia, conforto e melhor aproveitamento dos espaços dentro da mescla dos estilos escandinavo e moderno.">
             <img  src="images/projeto-29.jpg" >
           </a>
-          <a href="images/projeto-31.jpg" data-lightbox="models" data-title="Projeto realizado totalmente de forma on-line, onde a necessidade da cliente era remodelar por completo um apartamento antigo. todos os acabamentos, móveis e artigos decorativos foram sugeridos de forma a trazer harmonia, conforto e melhor aproveitamento dos espaços dentro da mescla dos estilos escandinavo e moderno.">
+          <a href="images/projeto-31.jpg" data-lightbox="models" class="legenda5" data-title="Projeto realizado totalmente de forma on-line, onde a necessidade da cliente era remodelar por completo um apartamento antigo. todos os acabamentos, móveis e artigos decorativos foram sugeridos de forma a trazer harmonia, conforto e melhor aproveitamento dos espaços dentro da mescla dos estilos escandinavo e moderno.">
             <img  src="images/projeto-31.jpg" >
           </a>
-          <a href="images/projeto-32.jpg" data-lightbox="models" data-title="Projeto realizado totalmente de forma on-line, onde a necessidade da cliente era remodelar por completo um apartamento antigo. todos os acabamentos, móveis e artigos decorativos foram sugeridos de forma a trazer harmonia, conforto e melhor aproveitamento dos espaços dentro da mescla dos estilos escandinavo e moderno.">
+          <a href="images/projeto-32.jpg" data-lightbox="models" class="legenda5" data-title="Projeto realizado totalmente de forma on-line, onde a necessidade da cliente era remodelar por completo um apartamento antigo. todos os acabamentos, móveis e artigos decorativos foram sugeridos de forma a trazer harmonia, conforto e melhor aproveitamento dos espaços dentro da mescla dos estilos escandinavo e moderno.">
             <img  src="images/projeto-32.jpg" >
           </a>
-          <a href="images/projeto-18.jpg" data-lightbox="models" data-title="O desafio desse projeto foi remodelar um quarto para irmãs adultas com gostos e rotinas diferentes. O armário para roupas já era embutido portanto não foi modificado, o restante da proposta foi aproveitar o máximo do espaço com pouco custo e de forma que cada uma tivesse suas necessidades atendidas.
+          <a href="images/projeto-18.jpg" data-lightbox="models" class="legenda6" data-title="O desafio desse projeto foi remodelar um quarto para irmãs adultas com gostos e rotinas diferentes. O armário para roupas já era embutido portanto não foi modificado, o restante da proposta foi aproveitar o máximo do espaço com pouco custo e de forma que cada uma tivesse suas necessidades atendidas.
           Posteriormente o mesmo espaço foi remodelado para atender apenas uma das pessoas, fazendo com que o projeto fosse ajustado e integrado a um espaço para home office.">
             <img  src="images/projeto-18.jpg" >
           </a>
-          <a href="images/projeto-38.jpg" data-lightbox="models" data-title="O desafio desse projeto foi remodelar um quarto para irmãs adultas com gostos e rotinas diferentes. O armário para roupas já era embutido portanto não foi modificado, o restante da proposta foi aproveitar o máximo do espaço com pouco custo e de forma que cada uma tivesse suas necessidades atendidas.
+          <a href="images/projeto-38.jpg" data-lightbox="models" class="legenda6" data-title="O desafio desse projeto foi remodelar um quarto para irmãs adultas com gostos e rotinas diferentes. O armário para roupas já era embutido portanto não foi modificado, o restante da proposta foi aproveitar o máximo do espaço com pouco custo e de forma que cada uma tivesse suas necessidades atendidas.
           Posteriormente o mesmo espaço foi remodelado para atender apenas uma das pessoas, fazendo com que o projeto fosse ajustado e integrado a um espaço para home office.">
             <img  src="images/projeto-38.jpg" >
           </a>
-          <a href="images/projeto-23.jpg" data-lightbox="models" data-title="O desafio desse projeto foi remodelar um quarto para irmãs adultas com gostos e rotinas diferentes. O armário para roupas já era embutido portanto não foi modificado, o restante da proposta foi aproveitar o máximo do espaço com pouco custo e de forma que cada uma tivesse suas necessidades atendidas.
+          <a href="images/projeto-23.jpg" data-lightbox="models" class="legenda6" data-title="O desafio desse projeto foi remodelar um quarto para irmãs adultas com gostos e rotinas diferentes. O armário para roupas já era embutido portanto não foi modificado, o restante da proposta foi aproveitar o máximo do espaço com pouco custo e de forma que cada uma tivesse suas necessidades atendidas.
           Posteriormente o mesmo espaço foi remodelado para atender apenas uma das pessoas, fazendo com que o projeto fosse ajustado e integrado a um espaço para home office.">
             <img  src="images/projeto-23.jpg" >
           </a>
-          <a href="images/projeto-30.jpg" data-lightbox="models" data-title="O desafio desse projeto foi remodelar um quarto para irmãs adultas com gostos e rotinas diferentes. O armário para roupas já era embutido portanto não foi modificado, o restante da proposta foi aproveitar o máximo do espaço com pouco custo e de forma que cada uma tivesse suas necessidades atendidas.
+          <a href="images/projeto-30.jpg" data-lightbox="models" class="legenda6" data-title="O desafio desse projeto foi remodelar um quarto para irmãs adultas com gostos e rotinas diferentes. O armário para roupas já era embutido portanto não foi modificado, o restante da proposta foi aproveitar o máximo do espaço com pouco custo e de forma que cada uma tivesse suas necessidades atendidas.
           Posteriormente o mesmo espaço foi remodelado para atender apenas uma das pessoas, fazendo com que o projeto fosse ajustado e integrado a um espaço para home office.">
             <img  src="images/projeto-30.jpg" >
           </a>
-          <a href="images/projeto-6.jpg" data-lightbox="models" data-title="Projeto criado por meio e consultoria on-line onde a necessidade da cliente era renovar o quarto do casal com o menor custo possivel. Ela desejava manter os móveis já existentes e foi criado também um móvel multifuncional sob medida que atendesse as necessidades de espaço da mesma.">
+          <a href="images/projeto-6.jpg" data-lightbox="models" class="legenda7" data-title="Projeto criado por meio e consultoria on-line onde a necessidade da cliente era renovar o quarto do casal com o menor custo possivel. Ela desejava manter os móveis já existentes e foi criado também um móvel multifuncional sob medida que atendesse as necessidades de espaço da mesma.">
             <img  src="images/projeto-6.jpg" >
           </a>
-          <a href="images/projeto-36.jpg" data-lightbox="models" data-title="O cliente possuia um espaço em piso superior usado anteriormente como armazém e o desejo era criar um pequeno apartamento com a finalidade de alugar. Após a avaliação da estrutura feita por um engenheiro, foi sugerida a disposição apresentada; as paredes são pre-moldadas e o restante dos acabamentos são pensados de forma a agradar um público geral.">
+          <a href="images/projeto-36.jpg" data-lightbox="models" class="legenda8" data-title="O cliente possuia um espaço em piso superior usado anteriormente como armazém e o desejo era criar um pequeno apartamento com a finalidade de alugar. Após a avaliação da estrutura feita por um engenheiro, foi sugerida a disposição apresentada; as paredes são pre-moldadas e o restante dos acabamentos são pensados de forma a agradar um público geral.">
             <img  src="images/projeto-36.jpg" >
           </a>
 
@@ -262,16 +274,16 @@
     
       <!-- formulario  -->
     <section id="formulario">     
-      <h2 style="color: black;">//Entre em contato</h2>
+      <h2 style="color: black;" id="titleContato">//Entre em contato</h2>
       <div>
         <form action="https://formsubmit.co/itacarambidesigner@gmail.com" method="post" autocomplete="on">
           <input type="hidden" name="_next" value="https://portfolio-andrea-three.vercel.app//sucesso.html">
           <input type="hidden" name="_captcha" value="false">
-          <label for="name">Nome</label>
+          <label for="name" id="contatoNome">Nome</label>
           <input type="text" name="name" id="nome" placeholder="Seu nome" required>
-          <label for="email">E-mail</label>
+          <label for="email" id="contatoEmail">E-mail</label>
           <input type="email" name="email" id="email" placeholder="Ex: exemplo@gmail.com" required placeholder="Ex: exemplo@gmail.com">
-          <label for="message">Mensagem</label>
+          <label for="message" id="contatoMensagem">Mensagem</label>
           <textarea name="menssagem" id="msg" cols="44" rows="5" placeholder="Sua mensagem. . ." required></textarea> <br>
           <input id="btnenviar"class="btnform" type="submit" value="Enviar">
         </form>
@@ -290,11 +302,71 @@
       
       <script type="text/javascript" src="script.js"></script>
       <script>
-        VanillaTilt.init(document.querySelectorAll(".card"), {
-          max: 25,
-          speed: 400,
-        });
+       
+
+        document.querySelectorAll('.dropdown-item').forEach(function(item) {
+      item.addEventListener('click', function() {
+          var language = this.textContent.trim();
+          var flag = this.querySelector('img').src;
+          var currentLanguage = document.querySelector('#navbarDropdown1').textContent.trim();
+          var currentFlag = document.querySelector('#navbarDropdown1 img').src;
+          document.querySelector('#navbarDropdown1').innerHTML = '<img src="' + flag + '" alt="" height="20px;"> ' + language;
+          document.querySelector('#navbarDropdown2').innerHTML = '<img src="' + currentFlag + '" alt="" height="20px;"> ' + currentLanguage;
+      });
+  });
+
+
+  document.querySelector('#navbarDropdown2').addEventListener('click', function() {
+    document.querySelector('#menuSobreMim').textContent = 'About me';
+    document.querySelector('#menuProjetos').textContent = 'Projects';
+    document.querySelector('#menuFormulario').textContent = 'Contact';
+    document.querySelector('#p1').textContent = 'Interior Designer';
+    document.querySelector('#titleHeader').innerHTML = '<strong>Count on me to help create and enhance <br> the environment of your dreams.</strong>';
+    document.querySelector('#sobremimTitle').textContent = 'About me';
+    document.querySelector('#sobreMimText').innerHTML = 'Graduated in Interior Design since 2011 with an MBA in project management. I worked in some of the largest planned furniture stores in Brasília - DF, also carrying out some projects autonomously and online consultancies; I have greater experience and knowledge in the elaboration of custom-made furniture projects and for small spaces.<br> <br> My projects are developed from a detailed analysis of each client\'s profile, so that they meet their needs and dreams within the best use of the available space. <br> <br> I have knowledge of SketchUp and AutoCAD tools, but I mostly work with Promob Arch in the creation of my projects. All projects come with a descriptive report, 3D images, mood board and detailed measurements for the execution of planned furniture.';
+    document.querySelector('#tituloProjetos').innerHTML = '<b>Get to know some of my projects</b>';
+    document.querySelector('#titleContato').textContent = '// Contact';
+    document.querySelector('#contatoNome').textContent = 'Name';
+    document.querySelector('#nome').placeholder = 'Your name';
+    document.querySelector('#contatoEmail').textContent = 'Email';
+    document.querySelector('#email').placeholder = 'Ex: example@gmail.com';
+    document.querySelector('#contatoMensagem').textContent = 'Message';
+    document.querySelector('#msg').placeholder = 'Your message. . .';
+    document.querySelector('#btnenviar').value = 'Send';
+    document.querySelectorAll('.legenda1').forEach(function(item) {
+        item.dataset.title = 'The client wanted to modernize the kitchen, increase the workbench and have a space for coffee. The project presents solutions to the presented needs in a harmonious and functional way, also creating a mini garden to compose the final proposal.';
+    });
+    document.querySelectorAll('.leganda2').forEach(function(item) {
+        item.dataset.title = 'The client needed better use of the apartment balcony and dining room. Project executed through online consultancy, on the balcony a space was proposed for the family in leisure moments and in the dining room, for better use, the proposal was a table with a German corner and a mirror panel to visually enlarge the environment.';
+    });
+    document.querySelectorAll('.legenda3').forEach(function(item) {
+        item.dataset.title = 'The first contact of this client was in search of remodeling her husband’s office, in order to surprise him. Later, she also requested the project of the living room predominantly in boho style with religious elements and lots of nature. We also carried out the project of the couple’s daughter’s room in Montessori style.';
+    });
+    document.querySelectorAll('.legenda4').forEach(function(item) {
+        item.dataset.title = 'Project created to meet the needs of an adult and single person in which the desire was to take advantage of the available space with the furniture they already had in order to create harmony in a small space for a home office.';
+    });
+    document.querySelectorAll('.legenda5').forEach(function(item) {
+        item.dataset.title = 'Project carried out entirely online, where the client’s need was to completely remodel an old apartment. All finishes, furniture and decorative items were suggested in order to bring harmony, comfort and better use of spaces within the mix of Scandinavian and modern styles.';
+    });
+    document.querySelectorAll('.legenda6').forEach(function(item) {
+        item.dataset.title = 'The challenge of this project was to remodel a room for adult sisters with different tastes and routines. The wardrobe for clothes was already built-in so it was not modified, the rest of the proposal was to make the most of the space with little cost and in a way that each one had their needs met. Later, the same space was remodeled to serve only one of the people, making the project adjusted and integrated into a space for a home office.';
+    });
+    document.querySelectorAll('.legenda7').forEach(function(item) {
+        item.dataset.title = 'Project created through online consulting where the client’s need was to renovate the couple’s bedroom with the lowest possible cost. She wanted to keep the existing furniture and a custom-made multifunctional piece of furniture was also created that would meet her space needs.';
+    });
+    document.querySelectorAll('.legenda8').forEach(function(item) {
+        item.dataset.title = 'The client had an upper floor space previously used as a warehouse and the desire was to create a small apartment for rent. After the structure was evaluated by an engineer, the layout presented was suggested; the walls are precast and the rest of the finishes are designed to please a general audience.';
+    });
+    
+});
+
+  
+  
+  
+
       </script>
+
+      
 
 
 
