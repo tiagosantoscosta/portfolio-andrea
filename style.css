@@ -270,6 +270,13 @@ a:link{text-decoration:none}
     font-size: 70px; 
     padding: 0px 10px;      
 }
+.dropdown-menu {
+    background-color: transparent;
+    border: none;
+  }
+#navbarDropdown1 {
+    color: white
+  }
 
 #sobremim h2{
     margin-bottom: 20px;  
@@ -1097,7 +1104,24 @@ footer #title{
         width: 500px; 
         max-height: 200px;
     }
-
+    #btnLanguage{
+        position: absolute;
+        right: 50px;
+    }
+    .dropdown-menu {
+        background-color: transparent;
+        border: none;
+      }
+    #navbarDropdown1 {
+        color: white
+      }
+      #navbarDropdown2 {
+        margin-top: -20px;;
+        margin-left:18px;
+      }
+      #navbarDropdown2:hover {
+        background-color: transparent;
+      }
     #formulario #btnenviar {
         width: 230px;
         height: 50px;

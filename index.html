@@ -81,6 +81,20 @@
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+            <div id="btnLanguage">
+              <li class="nav dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="icons/bandeira-de-portugal-5.png" alt="" height="20px;" width="40px"> 
+                </a>
+                <ul  class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li >
+                    <a style="width: 10px;" class="dropdown-item" href="#" id="navbarDropdown2">
+                      <img src="icons/ReinoUnido.jpg" alt="" height="20px;"> 
+                  </a>
+                  </li>
+                </ul>
+              </li>
+            </div>
             <!-- Adicione um contêiner de colapso para agrupar e ocultar o conteúdo da barra de navegação -->
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
@@ -96,16 +110,7 @@
                     <li class="nav-item mr-3">
                         <a class="nav-link" href="#formulario" id="menuFormulario"> <span class="text">Contato</span></a>
                     </li>
-                    <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          <img src="icons/Brazil.jpg" alt="" height="20px;"> Português-Br
-                      </a>
-                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <li ><a class="dropdown-item" href="#" id="navbarDropdown2">
-                              <img src="icons/ReinoUnido.jpg" alt="" height="20px;"> English
-                          </a></li>
-                      </ul>
-                  </li>
+                    
                   
                 </ul>
             </div>
@@ -118,7 +123,7 @@
 
       <!-- cabeçalho -->
      <div id="cabeçalho">
-     
+      
         <!-- <img  src="imagens/perfilandrea.png" alt="foto perfil" id="fotoperfil"> -->
        <h1 id="elementEl" style="font-family: 'Dancing Script', cursive; ">Andrea Itacarambi</h1> 
         <p id="p1" >Designer de interiores</p> 
@@ -127,6 +132,7 @@
         <a href="https://www.linkedin.com/in/tiago-costa-68b95821b/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
         <a href="https://github.com/tiagosantoscosta" target="_blank"><i class="fa-brands fa-github"></i></a>
         <a href="https://www.instagram.com/tigocostta/" target="_blank"><i class="fa-brands fa-instagram"></i></a> -->
+        
        </div>     
     </header>
 
@@ -305,15 +311,15 @@
        
 
         document.querySelectorAll('.dropdown-item').forEach(function(item) {
-      item.addEventListener('click', function() {
-          var language = this.textContent.trim();
-          var flag = this.querySelector('img').src;
-          var currentLanguage = document.querySelector('#navbarDropdown1').textContent.trim();
-          var currentFlag = document.querySelector('#navbarDropdown1 img').src;
-          document.querySelector('#navbarDropdown1').innerHTML = '<img src="' + flag + '" alt="" height="20px;"> ' + language;
-          document.querySelector('#navbarDropdown2').innerHTML = '<img src="' + currentFlag + '" alt="" height="20px;"> ' + currentLanguage;
+          item.addEventListener('click', function() {
+              var language = this.textContent.trim();
+              var flag = this.querySelector('img').src;
+              var currentLanguage = document.querySelector('#navbarDropdown1').textContent.trim();
+              var currentFlag = document.querySelector('#navbarDropdown1 img').src;
+              document.querySelector('#navbarDropdown1').innerHTML = '<img src="' + flag + '" alt="" height="20px;" width="40px"> ' + language;
+              document.querySelector('#navbarDropdown2').innerHTML = '<img src="' + currentFlag + '" alt="" height="20px;" width="40px"> ' + currentLanguage;
+          });
       });
-  });
 
 
   document.querySelector('#navbarDropdown2').addEventListener('click', function() {
