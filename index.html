@@ -83,14 +83,17 @@
             </button>
             <div id="btnLanguage">
               <li class="nav dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    <img src="icons/bandeira-de-portugal-5.png" alt="" height="20px;" width="40px"> 
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown0" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                   Language
                 </a>
                 <ul  class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li >
                     <a style="width: 10px;" class="dropdown-item" href="#" id="navbarDropdown2">
-                      <img src="icons/ReinoUnido.jpg" alt="" height="20px;"> 
-                  </a>
+                      <img src="icons/ReinoUnido.jpg" alt="" height="20px;" style="border-radius: 2px;"> 
+                    </a>
+                    <a style="width: 10px;" class="dropdown-item" href="#" id="navbarDropdown1">
+                      <img src="icons/bandeira-de-portugal-5.png" style="border-radius: 2px;" alt="" height="20px;" width="39px"> 
+                    </a>
                   </li>
                 </ul>
               </li>
@@ -310,16 +313,16 @@
       <script>
        
 
-        document.querySelectorAll('.dropdown-item').forEach(function(item) {
-          item.addEventListener('click', function() {
-              var language = this.textContent.trim();
-              var flag = this.querySelector('img').src;
-              var currentLanguage = document.querySelector('#navbarDropdown1').textContent.trim();
-              var currentFlag = document.querySelector('#navbarDropdown1 img').src;
-              document.querySelector('#navbarDropdown1').innerHTML = '<img src="' + flag + '" alt="" height="20px;" width="40px"> ' + language;
-              document.querySelector('#navbarDropdown2').innerHTML = '<img src="' + currentFlag + '" alt="" height="20px;" width="40px"> ' + currentLanguage;
-          });
-      });
+      //   document.querySelectorAll('.dropdown-item').forEach(function(item) {
+      //     item.addEventListener('click', function() {
+      //         var language = this.textContent.trim();
+      //         var flag = this.querySelector('img').src;
+      //         var currentLanguage = document.querySelector('#navbarDropdown1').textContent.trim();
+      //         var currentFlag = document.querySelector('#navbarDropdown1 img').src;
+      //         document.querySelector('#navbarDropdown1').innerHTML = '<img src="' + flag + '" alt="" height="20px;" width="40px"> ' + language;
+      //         document.querySelector('#navbarDropdown2').innerHTML = '<img src="' + currentFlag + '" alt="" height="20px;" width="40px"> ' + currentLanguage;
+      //     });
+      // });
 
 
   document.querySelector('#navbarDropdown2').addEventListener('click', function() {
@@ -366,6 +369,50 @@
     
 });
 
+
+document.querySelector('#navbarDropdown1').addEventListener('click', function() {
+    document.querySelector('#menuSobreMim').textContent = 'Sobre mim';
+    document.querySelector('#menuProjetos').textContent = 'Projetos';
+    document.querySelector('#menuFormulario').textContent = 'Contato';
+    document.querySelector('#p1').textContent = 'Designer de interiores';
+    document.querySelector('#titleHeader').innerHTML = '<strong>Conte comigo para ajudar a criar e aprimorar <br> o ambiente dos seus sonhos.</strong>';
+    document.querySelector('#sobremimTitle').textContent = 'Sobre mim';
+    document.querySelector('#sobreMimText').innerHTML = 'Graduada em Designer de interiores desde 2011 com MBA em gestão de projetos. Trabalhei em algumas das maiores lojas de móveis planejados de Brasília - DF, realizando também alguns projetos de forma autônoma e consultorias online; possuo maior experiência e conhecimento na elaboração de projetos de móveis sob medida e para pequenos espaços.<br> <br> Meus projetos são desenvolvidos a partir de uma análise detalhada do perfil cada cliente, de forma que atendam as suas necessidades e sonhos dentro da melhor utilização do espaço disponível. <br> <br> Tenho conhecimento nas ferramentas SketchUp e AutoCAD, porém atuo majoritariamente com Promob Arch na criação de meus projetos. Todos os projetos acompanham memorial descritivo, imagens em 3D, mood board e medidas com detalhamento para a execução dos móveis planejados.';
+    document.querySelector('#tituloProjetos').innerHTML = '<b>Conheça alguns dos meus projetos</b>';
+    document.querySelector('#titleContato').textContent = '// Entre em contato';
+    document.querySelector('#contatoNome').textContent = 'Nome';
+    document.querySelector('#nome').placeholder = 'Seu nome';
+    document.querySelector('#contatoEmail').textContent = 'Email';
+    document.querySelector('#email').placeholder = 'Ex: example@gmail.com';
+    document.querySelector('#contatoMensagem').textContent = 'Menssagem';
+    document.querySelector('#msg').placeholder = 'Sua menssagem. . .';
+    document.querySelector('#btnenviar').value = 'Enviar';
+    document.querySelectorAll('.legenda1').forEach(function(item) {
+        item.dataset.title = 'Cliente desejava modernizar a cozinha, aumentar a bancada de trabalho e ter um espaço para café. O projeto apresenta soluções para as necessidades apresentadas de forma harmônica e funcional, criando também uma mini horta para compor a proposta final.';
+    });
+    document.querySelectorAll('.leganda2').forEach(function(item) {
+        item.dataset.title = 'Cliente necessitava de melhor aproveitamento da varanda e sala de jantar do apartamento. Projeto executado por meio de consultoria on-line, na varanda foi proposto um espaço para a família em momentos de lazer e na sala de jantar, para melhor aproveitamento, a proposta foi uma mesa com canto alemão e painel em espelho para ampliar visualmente o ambiente.';
+    });
+    document.querySelectorAll('.legenda3').forEach(function(item) {
+        item.dataset.title = 'O primeiro contato dessa cliente foi em busca de remodelar o escritório de trabalho do esposo, de forma a surpreendê-lo. Posteriormente solicitou também o projeto da sala de estar predominantemente em estilo boho com elementos religiosos e muita natureza. Também realizamos o projeto do quarto da filha do casal em estilo montessoriano.';
+    });
+    document.querySelectorAll('.legenda4').forEach(function(item) {
+        item.dataset.title = 'Projeto criado para atender a necessida de uma pessoa adulta e solteira no qual o desejo era aproveitar o espaço disponível com os móveis que já possuia de forma a criar harmonia a um pequeno espaço para home office.';
+    });
+    document.querySelectorAll('.legenda5').forEach(function(item) {
+        item.dataset.title = 'Projeto realizado totalmente de forma on-line, onde a necessidade da cliente era remodelar por completo um apartamento antigo. todos os acabamentos, móveis e artigos decorativos foram sugeridos de forma a trazer harmonia, conforto e melhor aproveitamento dos espaços dentro da mescla dos estilos escandinavo e moderno.';
+    });
+    document.querySelectorAll('.legenda6').forEach(function(item) {
+        item.dataset.title = 'O desafio desse projeto foi remodelar um quarto para irmãs adultas com gostos e rotinas diferentes. O armário para roupas já era embutido portanto não foi modificado, o restante da proposta foi aproveitar o máximo do espaço com pouco custo e de forma que cada uma tivesse suas necessidades atendidas. Posteriormente o mesmo espaço foi remodelado para atender apenas uma das pessoas, fazendo com que o projeto fosse ajustado e integrado a um espaço para home office.';
+    });
+    document.querySelectorAll('.legenda7').forEach(function(item) {
+        item.dataset.title = 'Projeto criado por meio e consultoria on-line onde a necessidade da cliente era renovar o quarto do casal com o menor custo possivel. Ela desejava manter os móveis já existentes e foi criado também um móvel multifuncional sob medida que atendesse as necessidades de espaço da mesma.';
+    });
+    document.querySelectorAll('.legenda8').forEach(function(item) {
+        item.dataset.title = 'O cliente possuia um espaço em piso superior usado anteriormente como armazém e o desejo era criar um pequeno apartamento com a finalidade de alugar. Após a avaliação da estrutura feita por um engenheiro, foi sugerida a disposição apresentada; as paredes são pre-moldadas e o restante dos acabamentos são pensados de forma a agradar um público geral.';
+    });
+    
+});
   
   
   

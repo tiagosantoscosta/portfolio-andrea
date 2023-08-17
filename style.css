@@ -337,6 +337,13 @@ a:link{text-decoration:none}
     border-radius: 7px;
     font-size: 16px;
 }
+#navbarDropdown2 {
+    margin-top: -15px;
+    margin-left: 40px;
+  }
+  #navbarDropdown1 {
+    margin-left: 39px;
+  }
 .skills img{
     height: 100px;
     float: right;
@@ -1116,10 +1123,16 @@ footer #title{
         color: white
       }
       #navbarDropdown2 {
-        margin-top: -20px;;
-        margin-left:18px;
+        margin-top: -40px;
+        margin-left: 40px;
+      }
+      #navbarDropdown1 {
+        margin-left: 39px;
       }
       #navbarDropdown2:hover {
+        background-color: transparent;
+      }
+      #navbarDropdown1:hover {
         background-color: transparent;
       }
     #formulario #btnenviar {
